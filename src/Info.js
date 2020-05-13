@@ -44,8 +44,8 @@ export default class Info extends React.Component {
         <View style={{paddingVertical: 20}}>
           <Image
             style={{
-              width: 300,
-              height: 300,
+              width: 200,
+              height: 200,
               resizeMode: 'contain',
             }}
             // source={{
@@ -53,7 +53,7 @@ export default class Info extends React.Component {
             //     'https://pbs.twimg.com/profile_images/486929358120964097/gNLINY67_400x400.png',
             // }}
             source={{
-              SvgUri: imageUri,
+              uri: imageUri,
             }}
           />
         </View>

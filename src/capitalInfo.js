@@ -28,18 +28,22 @@ export default class Info extends React.Component {
             justifyContent: 'space-between',
             alignItems: 'center',
           }}>
-          <View style={{paddingVertical: 20}}>
-            <Image
-              style={{width: 100, height: 100}}
-              source={{
-                uri: weatherIcon,
-              }}
-            />
-          </View>
-          <View style={{paddingVertical: 20}}>
-            <Text style={styles.text}>temperature: {weather.temperature}</Text>
-            <Text style={styles.text}>wind speed: {weather.wind_speed}</Text>
-            <Text style={styles.text}>precip: {weather.precip}</Text>
+          <View>
+            <View style={{paddingVertical: 20}}>
+              <Image
+                style={{width: 100, height: 100, backgroundColor: 'red'}}
+                //   source={{
+                //     uri: weatherIcon[0],
+                //   }}
+              />
+            </View>
+            <View>
+              <Text style={styles.text}>
+                temperature: {weather.temperature}
+              </Text>
+              <Text style={styles.text}>wind speed: {weather.wind_speed}</Text>
+              <Text style={styles.text}>precip: {weather.precip}</Text>
+            </View>
           </View>
         </View>
       </View>
